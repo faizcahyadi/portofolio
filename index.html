@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background: #3E2723;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-left {
+            color: #FFCCBC;
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+        .nav-right {
+            margin-right: 20px;
+        }
+        .nav-right a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 24px;
+            text-align: center;
+            flex-direction: column;
+        }
+        #overview {
+            background: #8D6E63;
+            position: relative;
+            overflow: hidden;
+        }
+        #overview::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+        #overview div {
+            position: relative;
+            z-index: 2;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        #about {
+            background: #8D6E63;
+        }
+        #skills {
+            background: #D7CCC8;
+            color: #000;
+        }
+        .skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .skill {
+            background: #5D4037;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+            font-size: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .skill:hover {
+            transform: scale(1.1);
+            background: #3E2723;
+        }
+        #contact {
+            background: #795548;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #3E2723;
+            color: #fff;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">Hello, Welcome to my portofolio </div>
+        <div class="nav-right">
+            <a href="#overview">Overview</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    
+    <section id="overview" class="section">
+        <div>
+            <img src="cengir.png" alt="Foto Profil" style="width:150px; height:150px; border-radius:50%; margin-bottom:15px;">
+            <h1>Faiz Cahyadi</h1>
+            <p>(Mahasiswa Universitas Mercu Buana, Fakutas Ilmu Komputer)</p>
+            <br>
+            <hr>
+            <h2>Overview</h2>
+            <p>Selamat datang di portofolio saya. Saya seorang mahasiswa aktif jurusan Teknik Informatika Saya adalah seorang mahasiswa Teknik Informatika yang masih harus banyak belajar tentang dunia IT. Saya menyadari bahwa teknologi terus berkembang dengan cepat, dan ada begitu banyak hal yang belum saya ketahui. Namun, justru di situlah letak semangat saya—saya sangat suka mengulik sesuatu yang menarik perhatian saya.</p>
+            <p>Setiap kali menemukan konsep atau teknologi baru, saya merasa tertantang untuk memahami cara kerjanya, mengutak-atik, dan mencoba menerapkannya sendiri. Baik itu dalam pemrograman, jaringan, keamanan siber, atau kecerdasan buatan, saya selalu terdorong untuk mengeksplorasi lebih dalam.</p>
+            <p>Bagi saya, belajar IT bukan sekadar mengikuti kurikulum, tetapi juga tentang mencari tahu sendiri, mencoba hal-hal baru, dan menemukan solusi kreatif untuk setiap masalah. Rasa ingin tahu inilah yang membuat saya terus berkembang dan semakin mencintai dunia teknologi..</p>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div>
+            <h2>About</h2>
+            <p>Saya adalah mahasiswa Teknik Informatika yang ingin terus mempelajari dan memperdalam dunia teknologi. Meskipun saya telah memahami dasar-dasar di bidang IT, saya menyadari bahwa masih banyak hal yang perlu saya pelajari dan eksplorasi lebih dalam. </p> .
+            <p>Saya memiliki ketertarikan besar terhadap berbagai aspek teknologi, terutama dalam bidang pemrograman, jaringan, keamanan siber, dan kecerdasan buatan. Saya senang menantang diri sendiri untuk memahami konsep baru, bereksperimen dengan teknologi, dan mencari solusi kreatif terhadap berbagai permasalahan. </p>.
+            <p>Bagi saya, belajar tidak hanya terjadi di dalam kelas, tetapi juga melalui eksplorasi mandiri, proyek pribadi, dan diskusi dengan sesama pecinta teknologi. Dengan rasa ingin tahu yang tinggi, saya terus mengembangkan keterampilan dan pengetahuan saya agar dapat beradaptasi dengan perkembangan teknologi yang semakin pesat.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div>
+            <h1>Skills</h1>
+            <p>Berikut ini adalah beberapa keterampilan yang telah saya kuasai, <br>serta berbagai bidang yang masih terus saya pelajari dan kembangkan hingga saat ini untuk memperdalam pemahaman saya di dunia IT.</p>
+            <div class="skills">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">C++</div>
+                <div class="skill">LAN installation</div>
+                <p>Saya percaya bahwa proses belajar tidak pernah berhenti, dan saya selalu berusaha meningkatkan kemampuan saya agar dapat lebih siap menghadapi tantangan di bidang teknologi. <br> :)</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div>
+            <h2>Contact</h2>
+            <p>kmbingconge040@gmail.com</p>
+            <p>0892982382308</p>
+            <p>IG: @faizchydi</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Portofolio Saya</p>
+    </footer>
+</body>
+</html>
